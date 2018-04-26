@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          uri: https://github.com/kan01234/spring-cloud-learning/
+          searchPaths: cloud-config
+
+server:
+  port: 8888
