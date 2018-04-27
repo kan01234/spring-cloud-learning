@@ -5,6 +5,9 @@ spring:
   application:
     name: config-client
   cloud:
+    bus:
+      trace:
+        enabled: true
     config:
       label: master
       profile: dev
