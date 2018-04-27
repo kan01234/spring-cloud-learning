@@ -1,0 +1,14 @@
+spring:
+  profiles: node2
+  application:
+    name: registry-node-1
+server:
+  port: 8769
+eureka:
+  instance:
+    hostname: node2
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://node1:8761/eureka/
